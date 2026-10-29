@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre - Fabiana dos Santos Oliveira</title>
+    <style>
+      :root {
+        --bg: #f2f2f2;
+        --panel: #ffffff;
+        --text: #1e1e1e;
+        --muted: #4f4f4f;
+        --primary: #7b3cb1;
+        --primary-dark: #4d2d75;
+        --soft: #f3e8ff;
+        --border: #e4d8f4;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--primary-dark);
+      }
+
+      header {
+        background: linear-gradient(135deg, #7b3cb1, #4d2d75);
+        color: #fff;
+        padding: 26px 20px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .brand {
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: #fff;
+        font-weight: 700;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 32px auto 60px;
+        padding: 0 20px;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(80, 52, 117, 0.08);
+        padding: 28px;
+      }
+
+      h1 {
+        margin-top: 0;
+        color: var(--primary-dark);
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        margin-top: 24px;
+        color: var(--primary-dark);
+      }
+
+      p, li {
+        color: var(--muted);
+        line-height: 1.8;
+        font-size: 1.02rem;
+      }
+
+      ul {
+        padding-left: 18px;
+      }
+
+      footer {
+        background: var(--primary-dark);
+        color: #fff;
+        text-align: center;
+        padding: 18px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <div class="brand">Sobre mim</div>
+        <nav aria-label="Navegação principal">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="index.html#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h1>Minha trajetória</h1>
+        <p>
+          Olá! Meu nome é Fabiana dos Santos Oliveira e sou estudante de Programação Web. Tenho grande interesse por tecnologia, desenvolvimento de interfaces e criação de páginas que sejam funcionais, organizadas e visualmente agradáveis.
+        </p>
+        <p>
+          Acredito que aprender programação é uma forma de transformar ideias em soluções reais. Por isso, busco evoluir constantemente, estudar HTML, CSS e outras ferramentas do desenvolvimento web, além de criar projetos que me ajudem a desenvolver minhas habilidades técnicas e criativas.
+        </p>
+
+        <h2>Meus objetivos</h2>
+        <ul>
+          <li>Aprender cada vez mais sobre desenvolvimento web.</li>
+          <li>Praticar a criação de interfaces bem estruturadas.</li>
+          <li>Desenvolver projetos pessoais com organização e qualidade.</li>
+          <li>Continuar crescendo como estudante e profissional.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>2026 - Página Pessoal</footer>
+  </body>
+</html>

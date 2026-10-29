@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabiana dos Santos Oliveira</title>
+    <style>
+      :root {
+        --bg: #f3f3f3;
+        --panel: #ffffff;
+        --text: #1d1d1d;
+        --muted: #4d4d4d;
+        --primary: #7b3db1;
+        --primary-dark: #4d2d75;
+        --soft: #f2e9ff;
+        --border: #e4d9f7;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      a {
+        color: var(--primary-dark);
+        text-decoration: none;
+      }
+
+      header {
+        background: linear-gradient(135deg, #7b3db1, #4d2d75);
+        color: #fff;
+        padding: 24px 20px 32px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .brand {
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+
+      nav {
+        display: flex;
+        gap: 22px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: #fff;
+        font-weight: 700;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .profile-img {
+        width: 210px;
+        height: 210px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid rgba(255,255,255,0.45);
+        box-shadow: 0 10px 28px rgba(0,0,0,0.14);
+      }
+
+      .hero-text {
+        flex: 1;
+        min-width: 280px;
+      }
+
+      .hero-text h1 {
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+
+      .hero-text p {
+        margin: 0;
+        line-height: 1.7;
+        font-size: 1.08rem;
+        color: rgba(255,255,255,0.96);
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 30px auto 60px;
+        padding: 0 20px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.4fr 0.9fr;
+        gap: 24px;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: 0 8px 20px rgba(80, 52, 117, 0.08);
+        padding: 24px;
+      }
+
+      .card h2 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        color: var(--primary-dark);
+        font-size: 1.7rem;
+      }
+
+      .card p,
+      .card li {
+        color: var(--muted);
+        line-height: 1.8;
+        font-size: 1.03rem;
+      }
+
+      .card ul {
+        padding-left: 20px;
+        margin: 0;
+      }
+
+      .field {
+        display: grid;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+
+      label {
+        color: var(--primary-dark);
+        font-weight: 700;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 12px 14px;
+        font: inherit;
+        background: #fff;
+      }
+
+      textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+
+      button {
+        border: none;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: #fff;
+        padding: 14px 22px;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .social-box {
+        margin-top: 24px;
+        background: var(--soft);
+      }
+
+      footer {
+        background: var(--primary-dark);
+        color: #fff;
+        text-align: center;
+        padding: 18px;
+        font-weight: 700;
+      }
+
+      @media (max-width: 760px) {
+        .grid { grid-template-columns: 1fr; }
+        .topbar { flex-direction: column; align-items: flex-start; }
+        .hero { flex-direction: column; text-align: center; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <div class="brand">Fabiana</div>
+        <nav aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+
+      <div class="container hero">
+        <img class="profile-img" src="foto.jpg.jpeg" alt="Foto de perfil de Fabiana dos Santos Oliveira" />
+        <div class="hero-text">
+          <h1>Fabiana dos Santos Oliveira</h1>
+          <p>
+            Estudante de Programação Web. Apaixonada por tecnologia, criatividade e aprendizado contínuo.
+            Aqui compartilho um pouco sobre mim, meus interesses e meus objetivos.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="grid">
+        <section class="card">
+          <h2>Sobre mim</h2>
+          <p>
+            Sou estudante de Programação Web e tenho grande interesse por tecnologia, desenvolvimento de páginas e criação de experiências digitais que sejam funcionais e visualmente agradáveis.
+          </p>
+          <p>
+            Gosto de aprender coisas novas, explorar ferramentas do mercado e buscar conhecimento que me ajude a crescer tanto academicamente quanto profissionalmente.
+          </p>
+
+          <h2>Hobbies</h2>
+          <ul>
+            <li>Estudar programação e tecnologia.</li>
+            <li>Ler sobre desenvolvimento web e design.</li>
+            <li>Explorar novas ideias e ferramentas digitais.</li>
+            <li>Falar com pessoas da área e aprender com elas.</li>
+            <li>Treinar, ir à academia e manter o corpo em movimento.</li>
+          </ul>
+        </section>
+
+        <aside class="card" id="contato">
+          <h2>Entre em contato</h2>
+          <form class="contact-form" action="#" method="post">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" placeholder="Digite seu nome" required />
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="Digite seu e-mail" required />
+            </div>
+
+            <div class="field">
+              <label for="assunto">Assunto</label>
+              <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto" required />
+            </div>
+
+            <div class="field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+
+            <button type="submit">Enviar mensagem</button>
+          </form>
+        </aside>
+      </div>
+
+      <section class="card social-box">
+        <h2>Instagram</h2>
+        <a href="https://www.instagram.com/fabiana.soliveira__/" target="_blank" rel="noopener noreferrer">
+          @fabiana.soliveira__
+        </a>
+      </section>
+    </main>
+
+    <footer>2026 - Página Pessoal</footer>
+  </body>
+</html>
